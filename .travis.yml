@@ -1,0 +1,3 @@
+sudo: false
+script:
+- ./update.sh && git diff --exit-code
