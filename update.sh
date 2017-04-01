@@ -2,7 +2,7 @@
 
 GITBUCKET_VERSION=4.11
 
-GITBUCKET_GIST_PLUGIN_VERSION=4.6.0
+GITBUCKET_GIST_PLUGIN_VERSION=4.7.0
 GITBUCKET_EMOJI_PLUGIN_VERSION=4.4.0
 
 echo downloading...
@@ -32,13 +32,13 @@ mkdir plugins > /dev/null 2>&1
 if [ ! -f plugins/gitbucket-gist-plugin-$GITBUCKET_GIST_PLUGIN_VERSION.jar ]
 then
     rm plugins/gitbucket-gist-plugin*.jar > /dev/null 2>&1
-    echo -- downloading gitbucket-gist-plugin.jar && wget -q -O plugins/gitbucket-gist-plugin-$GITBUCKET_GIST_PLUGIN_VERSION.jar https://github.com/gitbucket/gitbucket-gist-plugin/releases/download/$GITBUCKET_GIST_PLUGIN_VERSION/gitbucket-gist-plugin_2.11-$GITBUCKET_GIST_PLUGIN_VERSION.jar && echo done.
+    echo -- downloading gitbucket-gist-plugin.jar && wget -q -O plugins/gitbucket-gist-plugin-$GITBUCKET_GIST_PLUGIN_VERSION.jar https://github.com/gitbucket/gitbucket-gist-plugin/releases/download/$GITBUCKET_GIST_PLUGIN_VERSION/gitbucket-gist-plugin_2.12-$GITBUCKET_GIST_PLUGIN_VERSION.jar && echo done.
 fi
 
 if [ ! -f plugins/gitbucket-emoji-plugin-$GITBUCKET_EMOJI_PLUGIN_VERSION.jar ]
 then
     rm plugins/gitbucket-emoji-plugin*.jar > /dev/null 2>&1
-    echo -- downloading gitbucket-emoji-plugin.jar && wget -q -O plugins/gitbucket-emoji-plugin-$GITBUCKET_EMOJI_PLUGIN_VERSION.jar https://github.com/gitbucket/gitbucket-emoji-plugin/releases/download/$GITBUCKET_EMOJI_PLUGIN_VERSION/gitbucket-emoji-plugin_2.11-$GITBUCKET_GIST_PLUGIN_VERSION.jar && echo done.
+    echo -- downloading gitbucket-emoji-plugin.jar && wget -q -O plugins/gitbucket-emoji-plugin-$GITBUCKET_EMOJI_PLUGIN_VERSION.jar https://github.com/gitbucket/gitbucket-emoji-plugin/releases/download/$GITBUCKET_EMOJI_PLUGIN_VERSION/gitbucket-emoji-plugin_2.12-$GITBUCKET_GIST_PLUGIN_VERSION.jar && echo done.
 fi
 
 echo
