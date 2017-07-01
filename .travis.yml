@@ -1,3 +1,6 @@
 sudo: false
+os:
+- osx
+- linux
 script:
 - ./update.sh && git diff --exit-code

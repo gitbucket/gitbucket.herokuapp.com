@@ -13,7 +13,12 @@ sig1=0
 
 if [ -f gitbucket.war ];
 then
-	sig1=`/usr/bin/md5sum -b gitbucket.war | cut -d' ' -f1`
+	if [ "$(uname)" == "Darwin" ]; then
+		brew install md5sha1sum
+		sig1=`md5sum -b gitbucket.war | cut -d' ' -f1`
+	else
+		sig1=`/usr/bin/md5sum -b gitbucket.war | cut -d' ' -f1`
+	fi
 fi
 sig2=`cut -d' ' -f1 gitbucket.war.md5`
 
