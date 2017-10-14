@@ -1,9 +1,9 @@
 #!/bin/bash
 
-GITBUCKET_VERSION=4.16.0
+GITBUCKET_VERSION=4.18.0
 
 GITBUCKET_GIST_PLUGIN_VERSION=4.10.0
-GITBUCKET_EMOJI_PLUGIN_VERSION=4.4.0
+GITBUCKET_EMOJI_PLUGIN_VERSION=4.5.0
 
 echo downloading...
 echo -- gitbucket.war.md5 && wget -q -O gitbucket.war.md5 https://github.com/gitbucket/gitbucket/releases/download/$GITBUCKET_VERSION/gitbucket.war.md5 && echo done.
