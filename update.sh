@@ -1,6 +1,6 @@
 #!/bin/bash
 
-GITBUCKET_VERSION=4.35.3
+GITBUCKET_VERSION=4.37.2
 
 echo downloading...
 echo -- gitbucket.war.md5 && wget -q -O gitbucket.war.md5 https://github.com/gitbucket/gitbucket/releases/download/$GITBUCKET_VERSION/gitbucket.war.md5 && echo done.
